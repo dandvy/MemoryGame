@@ -1,0 +1,100 @@
+@font-face {
+    font-family: Krungthep;
+    src: url(../../assets/Krungthep.ttf);
+}
+
+app-card {
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#game-table {
+    width: 800px;
+    margin: 0 auto;
+}
+
+.table-header {
+    text-align: initial;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+#restart-button {
+    float: left;
+    opacity: 0.8;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: #FFFFFF;
+    letter-spacing: -0.25px;
+    margin-left: 20px;
+    transition: .3s;
+}
+
+#restart-button:hover {
+    transform: scale(1.15);
+	transition: transform .3s;
+    cursor: pointer;
+}
+
+.score-container {
+    overflow: hidden;
+    text-align: right;
+    margin-right: 20px;
+}
+
+#score-label {
+    display: inline-block;
+    opacity: 0.8;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+}
+
+#score {
+    display: inline-block;
+    opacity: 0.8;
+    font-family: Krungthep;
+    font-size: 16px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    margin-left: 0.8%;
+}
+
+@media screen and (max-width: 850px) {
+    #game-table {
+        width: 600px;
+    }
+
+    app-card {
+        margin-left: 8px;
+        margin-right: 8px;
+        margin-bottom: 15px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    #game-table {
+        width: 400px;
+    }
+
+    app-card {
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    #game-table {
+        width: 320px;
+    }
+}

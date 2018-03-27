@@ -1,0 +1,16 @@
+<div id="game-table" data-tid="Deck">
+  <div class="table-header">
+    <div id="restart-button" (click)="restartGame()" data-tid="Menu-newGame">Начать заново</div>
+    <div class="score-container">
+      <div id="score-label">Очки:</div>
+      <div id="score" data-tid="Menu-scores">{{ score }}</div>
+    </div>
+  </div>
+  <div class="card-holder">
+      <app-card 
+      *ngFor="let cardEl of tableCards" 
+      [card]="cardEl" 
+      (click)="cardClick(cardEl)"
+      attr.data-tid={{cardEl.cardtid}}></app-card>
+  </div>
+</div>

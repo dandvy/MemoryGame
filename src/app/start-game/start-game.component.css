@@ -1,0 +1,42 @@
+#start-game-container {
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 auto;
+}
+
+.image-holder {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.game-name {
+    opacity: 0.85;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 28px;
+    color: #FFFFFF;
+    letter-spacing: 0.2px;
+    margin-bottom: 6%;
+}
+
+#start-game-button {
+    width: 144px;
+    height: 42px;
+    opacity: 0.85;
+    background: #FFFFFF;
+    border-radius: 4px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #1C7430;
+    letter-spacing: 0;
+    border: none;
+    transition: 0.4s;
+}
+
+#start-game-button:hover{
+    background: rgb(37, 37, 37);
+    color: white;
+    transition: 0.4s;
+}

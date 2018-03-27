@@ -1,0 +1,85 @@
+.flip-container {
+	perspective: 1000px;
+}
+
+.flip-container.flip .flipper{
+    transform: rotateY(180deg);
+}
+
+.flip-container, .front, .back {
+	width: 110px;
+	height: 160px;
+}
+
+.front:hover img  {
+	background-color: rgb(61, 61, 61);
+	transition: 0.4s;
+}
+
+.flip-container.flip img {
+	transform: scale(1.1);
+	transition: transform 0.4s;
+}
+
+.flipper img {
+	border-radius: 6px;
+	background-color: white;
+	transition: 0.4s;
+    width: 100%;
+	height: 100%;
+}
+
+.flipper {
+	transition: 0.4s;
+	transform-style: preserve-3d;
+	position: relative;
+}
+
+.front, .back {
+	backface-visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.front {
+	z-index: 2;
+	transform: rotateY(0deg);
+}
+
+.back {
+	transform: rotateY(180deg);
+}
+
+@keyframes disappear {
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
+
+.disappear {
+    animation-name: disappear;
+    animation-duration: 0.7s;
+    animation-delay: 0.3s;
+    animation-fill-mode: forwards;
+}
+
+@media screen and (max-width: 850px) {
+    .flip-container, .front, .back {
+		width: 80px;
+		height: 120px;
+	}
+}
+
+@media screen and (max-width: 650px) {
+    .flip-container, .front, .back {
+		width: 55px;
+		height: 80px;
+	}
+}
+
+@media screen and (max-width: 430px) {
+    .flip-container, .front, .back {
+		width: 40px;
+		height: 65px;
+	}
+}

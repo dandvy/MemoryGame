@@ -1,0 +1,10 @@
+<div class="flip-container" [ngClass]="{flip: card.flipped, disappear: card.disappear}">
+	<div class="flipper">
+		<div class="front">
+			<img src="{{ card.cardBackPath }}" alt="Рубашка">
+		</div>
+		<div class="back" *ngIf="card.visible">
+			<img src="{{ card.imgPath }}" alt="Карта">
+		</div>
+	</div>
+</div>

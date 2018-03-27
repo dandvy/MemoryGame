@@ -1,0 +1,31 @@
+body {
+    background-color: #1C7430;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+}
+
+app-root {
+    display: block;
+    height: 100%;
+    text-align: center;
+}
+
+app-start-game, app-end-game {
+    display: block;
+    height: 100%;
+    width: 100%;
+    /* text-align: center; */
+}
+
+app-start-game::before, app-end-game::before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
